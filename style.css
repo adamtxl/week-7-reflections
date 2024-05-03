@@ -82,3 +82,10 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
   background: #dcdcdc;
 }
+#submit-btn:hover{
+  background-color: #7a7a7a;
+}
+
+.delete-btn:hover {
+  background-color: #7a7a7a;
+}

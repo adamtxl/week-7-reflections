@@ -40,7 +40,7 @@ function addAffirmations(event) {
 		affirmationTable.innerHTML += `<tr> 
   <td>${affirmationInput.value}</td>
   <td>${authorInput.value}</td>
-  <td> <button class = "delete-btn" onClick="deleteTask(event)">❌</button> </td>
+  <td> <button class = "delete-btn" onClick="deleteTask(event)" class="submit-btn">❌</button> </td>
   </tr>`;
 	}
 	if (fireCount < iceCount) {
