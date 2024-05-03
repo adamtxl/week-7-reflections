@@ -31,17 +31,19 @@
       <form>
         <input
           placeholder="Affirmation"
-          type="text">
+          type="text"
+          id = "affirmation-affirmation">
         <input
           placeholder="Author"
-          type="text">
-        <button>Submit</button>
+          type="text"
+          id="affirmation-author">
+        <button onClick="addAffirmations(event);">Submit</button>
       </form>
     </section>
     
     <section>
       <h3>Your Affirmations:</h3>
-      <table>
+      <table id = "affirmation-table">
         <thead>
           <tr>
             <th>Affirmation Text</th>

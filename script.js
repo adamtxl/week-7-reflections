@@ -3,9 +3,13 @@ onReady();
 function onReady() {
   console.log('Javascript is working!');
 }
-let iceButton = document.getElementById("ice-button")
-let fireButton = document.getElementById("fire-button");
-let pageBody = document.getElementById("emojisHere")
+const iceButton = document.getElementById("ice-button");
+const fireButton = document.getElementById("fire-button");
+let affirmationTable = document.getElementById("affirmation-table")
+let pageBody = document.getElementById("emojisHere");
+
+let affirmationInput = document.getElementById("affirmation-affirmation");
+let authorInput = document.getElementById("affirmation-author");
 
 function createFire (event){
   console.log('fire button clicked')
@@ -17,4 +21,17 @@ function createIce (event){
   pageBody.innerHTML += `<p>❄️</p>`
   
   
+}
+// debugger;
+function addAffirmations (event){
+  event.preventDefault();
+  console.log('submitted')
+  //add input values as table items
+  affirmationTable.innerHTML += 
+  `<tr> 
+  <td>${affirmationInput.value}</td>
+  <td>${authorInput.value}</td>
+  
+  </tr>`
+
 }
