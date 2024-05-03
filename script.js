@@ -33,7 +33,8 @@ function addAffirmations (event){
   <td>${authorInput.value}</td>
   <td> <button onClick="deleteTask(event)">delete</button> </td>
   </tr>`
-
+  affirmationInput.value = '';
+  authorInput.value = '';
 }
 
 function deleteTask(event) {
