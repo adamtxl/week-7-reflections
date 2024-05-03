@@ -4,6 +4,9 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #313131;
   font-size: 1.25em;
+  background-image: url("https://i.imgur.com/QriHYjI.png");
+  background-repeat: repeat-x;
+  background-attachment: scroll;
 }
 
   
@@ -25,6 +28,7 @@ main {
   flex: auto;
   max-width: 80%;
   margin: auto;
+  
 }
 footer {
   height: 8em;
@@ -43,8 +47,24 @@ header, footer {
 h1 {
   font-size: 2.5em;
 }
+/* TEXT ELEMENTS */
+h3 {
+  color: white;
+  display: inline-block;
+  background-color: #7a7a7a;
+}
 
+.ice-emojis {
+  background-color: #0088ff;
+  font-size: 3em;
+  display: inline-block;
+}
 
+.fire-emojis {
+  background-color: red;
+  font-size: 3em;
+  display: inline-block;
+}
 /* FORM ELEMENTS */
 input {
   padding: .5em;
@@ -82,6 +102,7 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
   background: #dcdcdc;
 }
+
 #submit-btn:hover{
   background-color: #7a7a7a;
 }

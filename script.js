@@ -16,14 +16,14 @@ let iceCount = 0;
 
 function createFire(event) {
 	console.log('fire button clicked');
-	pageBody.innerHTML += '<p>🔥</p>';
+	pageBody.innerHTML += '<p class="fire-emojis">🔥</p>';
 	fireCount++;
 	console.log(`New Fire Count is: ${fireCount}`);
 }
 
 function createIce(event) {
 	console.log('ice button clicked');
-	pageBody.innerHTML += `<p>❄️</p>`;
+	pageBody.innerHTML += `<p class="ice-emojis">❄️</p>`;
 	iceCount++;
 	console.log(`New Ice Count is: ${iceCount}`);
 }
@@ -37,7 +37,8 @@ function addAffirmations(event) {
 	if (fireCount >= iceCount) {
 		console.log('submitted');
 		//add input values as table items
-		affirmationTable.innerHTML += `<tr> 
+		affirmationTable.innerHTML += `
+  <tr> 
   <td>${affirmationInput.value}</td>
   <td>${authorInput.value}</td>
   <td> <button class = "delete-btn" onClick="deleteTask(event)" class="submit-btn">❌</button> </td>
