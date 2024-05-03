@@ -110,3 +110,7 @@ tbody tr:nth-child(even){
 .delete-btn:hover {
   background-color: #7a7a7a;
 }
+.deleteColumn {
+  align-items: center;
+  padding-left: 50px;
+}

@@ -41,7 +41,7 @@ function addAffirmations(event) {
   <tr> 
   <td>${affirmationInput.value}</td>
   <td>${authorInput.value}</td>
-  <td> <button class = "delete-btn" onClick="deleteTask(event)" class="submit-btn">❌</button> </td>
+  <td class="deleteColumn"> <button class = "delete-btn" onClick="deleteTask(event)">❌</button> </td>
   </tr>`;
 	}
 	if (fireCount < iceCount) {
