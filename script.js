@@ -31,7 +31,7 @@ function addAffirmations (event){
   `<tr> 
   <td>${affirmationInput.value}</td>
   <td>${authorInput.value}</td>
-  <td> <button onClick="deleteTask(event)">delete</button> </td>
+  <td> <button class = "delete-btn" onClick="deleteTask(event)">❌</button> </td>
   </tr>`
   affirmationInput.value = '';
   authorInput.value = '';
